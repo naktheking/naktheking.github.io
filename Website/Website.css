@@ -52,9 +52,13 @@ body {
     text-align: center;  
   }
 
+.project-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 40px;
+}
   
-  
-  .section {
+.section {
     display: flex;
     justify-content: space-between;
 }
