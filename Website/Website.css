@@ -28,38 +28,65 @@ body {
     color: #333; 
     text-align: center;  
   }
-  .content {
+
+
+
+
+
+
+
+
+
+
+
+
+  .introduction {
     display: flex;
     align-items: center;
   }
   
-  .content-left {
+  .intro-photo {
     flex: 1;
-    max-width: 50%;
-  }
-  
-  .content-left img {
+    max-width: 60%;
+  } img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
   }
-  
-  .content-right {
+
+
+  .description {
     flex: 2;
     padding: 0 10px;
     height: 350px;
     text-align: center;  
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  .description { 
-    background-color: #eee; 
-    padding: 20px; 
-  }
   
   .projects { 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between; 
+    flex-direction: column; 
+    justify-content: center; /* center the content horizontally */ 
+    align-items: center; /* center the content vertically */ 
+
   }
   
   .project-box { 
@@ -67,37 +94,60 @@ body {
     background-color: #eee; 
     padding: 20px; 
     margin-bottom: 20px; 
+    width: 300px; /* adjust as needed */
+    color: #333; 
+    text-decoration: none; 
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+
+
   }
   
   .project-group {
     display: inline-block;
     margin: 10px;
+    width: 30%;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 10px; /* add some margin on the sides */
+    text-align: center;
   }
   
-  .project-box {
-    width: 300px; /* adjust as needed */
-  }
   
   .project-box img {
     width: 100%;
     height: auto;
-  }
-  .project-box img { 
     display: block; 
     width: 50%; 
     height: 50%;
     margin-bottom: 10px; 
   }
+
   
-  .project-box a { 
-    color: #333; 
-    text-decoration: none; 
-  }
+
   
   .project-box a:hover { 
     text-decoration: underline; 
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
   .contact { 
     background-color: #eee; 
     padding: 20px; 
@@ -138,55 +188,9 @@ body {
     text-align: center; 
   }
   
-  /* Media Queries */ 
-  @media (max-width: 768px) { 
-    .projects { 
-      flex-direction: column; 
-    }
-  
-    .project-box {
-      flex-basis: 100%;
-    }
-  }
-  
-  /* Additional Styles */
-  .project-group {
-    width: 30%;
-    margin: 0 auto;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-  }
-  
-  .project-box {
-    display: inline-block;
-    width: 100%;
-    padding-bottom: 100%;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .project-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
-  .projects { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; /* center the content horizontally */ 
-    align-items: center; /* center the content vertically */ 
-  }
-  
-  .project-group {
-    width: 30%;
-    margin: 0 10px; /* add some margin on the sides */
-    text-align: center;
-  }
+
+
 
   .container {
 
