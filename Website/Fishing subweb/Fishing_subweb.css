@@ -1,0 +1,57 @@
+/* Set some default styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the main content */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Style each picture section */
+  section {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    max-width: 400px;
+    overflow: hidden;
+  }
+  
+  /* Style the picture and description */
+  section img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  section h2 {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  section p {
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  /* Style the hover effect on the picture section */
+  section:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+  }

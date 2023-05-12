@@ -1,0 +1,207 @@
+/* Global Styles */ 
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  header { 
+    background-color: #000000; 
+    color: hsl(0, 78%, 93%); 
+    padding: 20px; 
+    text-align: center; 
+  }
+  
+  h1 { 
+    margin: 0; 
+  }
+  
+  main { 
+    margin: 20px; 
+  }
+  
+  section { 
+    margin-bottom: 50px; 
+  }
+  
+  h2 { 
+    color: #333; 
+    text-align: center;  
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-left {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .content-left img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .content-right {
+    flex: 2;
+    padding: 0 10px;
+    height: 350px;
+    text-align: center;  
+  }
+  
+  .description { 
+    background-color: #eee; 
+    padding: 20px; 
+  }
+  
+  .projects { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .project-box { 
+    flex-basis: 30%; 
+    background-color: #eee; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+  }
+  
+  .project-group {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .project-box {
+    width: 300px; /* adjust as needed */
+  }
+  
+  .project-box img {
+    width: 100%;
+    height: auto;
+  }
+  .project-box img { 
+    display: block; 
+    width: 50%; 
+    height: 50%;
+    margin-bottom: 10px; 
+  }
+  
+  .project-box a { 
+    color: #333; 
+    text-decoration: none; 
+  }
+  
+  .project-box a:hover { 
+    text-decoration: underline; 
+  }
+  
+  .contact { 
+    background-color: #eee; 
+    padding: 20px; 
+  }
+  
+  form { 
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  label { 
+    margin-bottom: 10px; 
+  }
+  
+  input, textarea { 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: none; 
+    background-color: #f2f2f2; 
+  }
+  
+  button { 
+    padding: 10px; 
+    border: none; 
+    background-color: #333; 
+    color: #fff; 
+    cursor: pointer; 
+  }
+  
+  button:hover { 
+    background-color: #4d4d4d; 
+  }
+  
+  footer { 
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+  }
+  
+  /* Media Queries */ 
+  @media (max-width: 768px) { 
+    .projects { 
+      flex-direction: column; 
+    }
+  
+    .project-box {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Additional Styles */
+  .project-group {
+    width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  .project-box {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .project-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .projects { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; /* center the content horizontally */ 
+    align-items: center; /* center the content vertically */ 
+  }
+  
+  .project-group {
+    width: 30%;
+    margin: 0 10px; /* add some margin on the sides */
+    text-align: center;
+  }
+
+  .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15vh;
+  }
+  
+  #calc_input {
+    margin-bottom: 10px;
+  }
+
+  #result {
+    margin-top: 9px;
+  }
+ 
