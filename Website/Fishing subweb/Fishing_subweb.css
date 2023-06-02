@@ -50,8 +50,3 @@ body {
     text-align: justify;
   }
   
-  /* Style the hover effect on the picture section */
-  section:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-  }
