@@ -1,41 +1,114 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
+	background-color: #F5F5F5;
+}
+
+h1 {
+	text-align: center;
+	color: #4B0082;
+	font-family: Arial, san-serif;
+	margin-top: 50px;
 }
 
 .timeline {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin: 50px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 90%;
+	margin-top: 50px;
 }
 
 .timeline-item {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 	margin-bottom: 50px;
+	display: flex;
+	align-items: flex-start;
 }
 
 .timeline-date {
-	font-size: 24px;
-	font-weight: bold;
-	margin-right: 20px;
-}
+	width: 150px;
+	height: 80px;
+	border-radius: 10px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 80px;
+	background-color: #4B0082;
+	color: #FFFFFF;
+	position: absolute;
+	margin-top: 10px;
+	transform: translate(-50%, 0%);
+  }
 
 .timeline-content {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	margin-left: 150px;
+	height: 100%;
+	border-left: 2px solid #4B0082;
+	padding-left: 20px;
+	position: relative;
+	background-color: #FFFFFF;
 }
 
 .timeline-content img {
-	max-width: 300px;
+	height: 300px;
+	float: left;
 	margin-right: 20px;
 }
 
-.timeline-content p {
+.timeline-content h4 {
 	font-size: 18px;
-	text-align: left;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.timeline-item:first-child .timeline-content {
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+	.timeline-date {
+		left: 0;
+		top: auto;
+		transform: translateY(-50%);
+		margin-left: 10px;
+	}
+  
+	.timeline-content {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+  
+	.timeline-content img {
+		height: 200px;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+  
+	.timeline-content p {
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.timeline-content {
+		height: auto;
+		padding: 20px;
+		margin-left: 0;
+		border-left: none;
+	}
+  
+	.timeline-content img {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+  
+	.timeline-date {
+		position: relative;
+		margin: 0 auto 10px;
+		transform: translateY(0);
+	}
 }
