@@ -137,4 +137,37 @@ body {
   #result {
     margin-top: 9px;
   }
- 
+
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .description h2 {
+        font-size: 30px;
+    }
+    
+    .description p {
+        font-size: 20px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .description h2 {
+        font-size: 25px;
+    }
+    
+    .description p {
+        font-size: 16px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 80px;
+    }
+}
