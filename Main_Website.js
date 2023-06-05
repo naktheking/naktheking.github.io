@@ -1,5 +1,5 @@
 // Load the Google Sheets API client library
-gapi.load('client', initClient);
+gapi.load('sheets', initClient);
 
 // Initialize the Google Sheets API client library
 function initClient() {
