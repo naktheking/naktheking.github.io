@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Max Zhang</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30rem;
+    border-color: rgb(107, 114, 128);
+    width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1f2937;
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem; 
+}
+.list-divider {
+    color: rgb(73,99,111);
+    font-size:1.5rem;
+    line-height: 2rem;
+}
+.menu-text {
+    font-weight: 600;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+.menu-text a:link {
+    color: white;
+    font-family: sans-serif;
+    text-decoration-line: none;
+}
+.menu-text a:visited {
+    color: white;
+    font-family: sans-serif;
+    text-decoration-line: none;
+}
+.menu-text a:hover {
+    color: aqua;
+    text-decoration-line: none;
+}
+.menu-text a:active {
+    text-decoration-line: none;
+}
+
+.home {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    margin-bottom: 5%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    z-index: 2;
+}
+.intro-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    z-index: 1;
+    gap: 3rem;
+}
+.pfp {
+    border: solid;
+    border-radius: 100%;
+    border-color: aqua;
+    border-width: 5px;
+    overflow: hidden;
+    height: 20vh;
+    vertical-align: middle;
+    width: auto;
+    color: transparent;
+    max-width: 100%;
+    transition: transform .2s;
+    z-index: 2;
+}
+.pfp:hover {
+    transform: scale(3);
+}
+.intro-text {
+    margin-top: 0;
+    margin-left: 5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-family: arial;
+    color: white;
+}
+
+
+.about {
+    width: 83.4%;
+    max-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-links a:link {
+    color: aqua;
+    text-decoration-line: none;
+}
+.about-links a:visited {
+    color: aqua;
+    text-decoration-line: none;
+}
+.about-links a:hover {
+    color: aqua;
+    text-decoration-line: underline;
+}
+.about-links a:active {
+    text-decoration-line: none;
+}
+
+.portfolio {
+    width: 50%;
+    margin-bottom: 20rem;
+    margin-top: 20rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 5.6rem;
+}
+.portfolio-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.portfolio-item {
+    display: flex;
+    gap: 20rem;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(2);
+}
+
+
+
+
+.fishing a:link {
+    color: aqua;
+    text-decoration-line: none;
+}
+.fishing a:visited {
+    color: aqua;
+    text-decoration-line: none;
+}
+.fishing a:hover {
+    color: white;
+    text-decoration-line: underline;
+}
+.fishing a:active {
+    text-decoration-line: none;
+}
+
+</style>
+</head>
+
+
+
+<body style="background-color: #1f2937; margin: 0;">
+
+
+<div style="padding-top: 1.7rem; position:sticky; top: 0rem; backdrop-filter: blur; -webkit-backdrop-filter: blur(4px);">
+    <div class="menu">
+        <div class="menu-list">
+            <div class="menu-text">
+                <a href="#top">Home</a>
+            </div>
+            <span class="list-divider">|</span>
+            <div class="menu-text">
+                <a href="#about">About</a>
+            </div>
+            <span class="list-divider">|</span>
+            <div class="menu-text">
+                <a href="#portfolio">Porfolio</a>
+            </div>
+            <span class="list-divider">|</span>
+            <div class="menu-text">
+                <a href="#resume">Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="home">
+    <div class="intro">
+        <div>
+            <img  src="images/max pfp.jpeg" alt="max picture" fetchpriority="high" width=512 height=512 decoding="async" data-nimg="1" class="pfp">
+        </div>
+        <div class="intro-text">
+            <span style="font-size: 1.5rem; line-height: 2rem; font-family: monospace; color: white">Hi! &#128075</span>
+            <br>
+            <br>
+            I'm <span style="font-weight: 700; font-family: monospace; white-space: nowrap; color: aqua;">Max Zhang.</span>
+            <br>
+            <span style="font-size: 0.9rem; line-height: 1.5rem;">Technology. Music. Fishing.</span>
+        </div>
+    </div>
+
+    <div class="intro-links">
+        <a href="https://www.linkedin.com/in/max-zhang-85aa8425b/" target="_blank" rel="noopener noreferrer">
+            <img src="images/linkedin pic.png" alt="Linkedin" style="height:2.5rem; filter:grayscale(0.5); display: block; border-radius: 100%;">
+        </a>
+        <a href="https://github.com/naktheking" target="_blank" rel="noopener noreferrer">
+            <img src="images/github pic.png" alt="Github" style="height:2.5rem; display: block; border-radius: 100%;">
+        </a>
+    </div>
+
+</div>
+
+
+
+<div id="about">
+    <div class="about">
+        <span style="color: white; font-family: sans-serif; font-size: 1.65rem;"><b>About Me</b></span>
+        <br>
+        <span style="color: white; font-family: sans-serif; line-height: 1.5rem;">
+            Hi! I'm Max and I love computer science. I love to code in my free time and play with technology &#128187. I like to occassionally dabble my interests in game design and computers. My older brother Oliver is the best trumpet player in the world. He's the best.
+        </span>
+        <br>
+        <span class="about-links" style="color: white; font-family: sans-serif; line-height: 1.5rem;">
+            I'm a big fan of artificial intelligence and how it revolutionizes the way we learn, educate, communicate, create, and push boundaries of what is possible with technology. Most recently, I've been taking courses on computer science and AI at 
+            <a href="https://www.cmu.edu" target="_blank">
+                Carnegie Mellon University's
+            </a> summer courses and I'm eager to use what I learned in my future projects and ideas.
+        </span>
+        <br>
+        <span style="color: white; font-family: sans-serif; line-height: 1.5rem;">
+            Outside of STEM, I also love playing the trumpet! I have been competeing at the National Trumpet Competition since 7th grade as a semi-finalist among the best in the country. I also played in the Kansas All-State Symphony Orchestra as principal trumpet last year. I am an active member in my school band and serve as a leader among my band peers.
+        </span>
+    </div>
+</div>
+
+
+
+
+<div id="portfolio" class="portfolio">
+    <div class="portfolio-title">
+        What I've Done
+    </div>
+    <div class="portfolio-list">
+        <div class="portfolio-item">
+            <img src="images/fishing.jpeg" style="width:30rem; height:15rem; object-fit: cover;" class="zoom">
+            <h3 class="fishing">&#128031 <a href="fishing.html">Fishing</a></h3>
+        </div>
+        <br>
+        <br>
+        <div class="portfolio-item">
+            <h3>&#127926 Music</h3>
+            <img src="images/music.jpeg" style="width:30rem; height:15rem; object-fit: cover;"  class="zoom">
+        </div>
+        <br>
+        <br>
+        <div class="portfolio-item">
+            <img src="images/coding.jpeg" style="width:30rem; height:15rem; object-fit: cover;"  class="zoom">
+            <h3>&#128187 Coding</h3>
+        </div>
+    </div>
+</div>
+
+
+
+<p style="text-align: center; color: white; font-family: sans-serif; font-size: 0.8rem;">Max Zhang 2024</p>
+
+
+
+</body>
+
+
+</html>
