@@ -76,7 +76,7 @@ html {
     align-items: center;
     justify-content: center;
     margin-bottom: 5%;
-    z-index: 2;
+    z-index: 1;
 }
 .intro-links {
     display: flex;
@@ -95,11 +95,10 @@ html {
     overflow: hidden;
     height: 20vh;
     vertical-align: middle;
-    width: auto;
+    width: 100%;
     color: transparent;
-    max-width: 100%;
+    max-width: 20vh;
     transition: transform .2s;
-    z-index: 2;
 }
 .pfp:hover {
     transform: scale(3);
@@ -145,7 +144,8 @@ html {
 }
 
 .portfolio {
-    width: 50%;
+    width: 83.4%;
+    max-width: 60rem;
     margin-bottom: 20rem;
     margin-top: 20rem;
     justify-content: center;
@@ -172,12 +172,17 @@ html {
     justify-content: center;
 }
 .portfolio-item {
-    display: flex;
-    gap: 20rem;
-    color: white;
-    font-family: sans-serif;
-    font-size: 2rem;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: arial;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: #2f3e53;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 .zoom {
@@ -185,6 +190,13 @@ html {
 }
 .zoom:hover {
     transform: scale(2);
+}
+
+.smallzoom {
+    transition: transform .2s;
+}
+.smallzoom:hover {
+    transform: scale(1.2);
 }
 
 
@@ -241,7 +253,7 @@ html {
 <div class="home">
     <div class="intro">
         <div>
-            <img  src="images/max pfp.jpeg" alt="max picture" fetchpriority="high" width=512 height=512 decoding="async" data-nimg="1" class="pfp">
+            <img src="images/max pfp.jpeg" alt="max picture" fetchpriority="high" decoding="async" data-nimg="1" class="pfp">
         </div>
         <div class="intro-text">
             <span style="font-size: 1.5rem; line-height: 2rem; font-family: monospace; color: white">Hi! &#128075</span>
@@ -294,22 +306,31 @@ html {
     <div class="portfolio-title">
         What I've Done
     </div>
+
+    <br>
+    <br>
+
     <div class="portfolio-list">
         <div class="portfolio-item">
-            <img src="images/fishing.jpeg" style="width:30rem; height:15rem; object-fit: cover;" class="zoom">
-            <h3 class="fishing">&#128031 <a href="fishing.html">Fishing</a></h3>
+            <img src="images/fishing.jpeg" style="width: 100%; max-width:50rem; height:auto; object-fit:cover; border-radius:3px;" class="smallzoom">
+            <h2 class="fishing">&#128031 <a href="fishing.html">Fishing</a></h2>
+            <p style="text-align: left; font-family: arial; line-height: 1.3rem; max-width: 50rem;">This is a small gallery collection of my past fishing catches. To share my passion, I also founded the Fishing and Wildlife Conservation club at my high school, which brought together thirty other students.</p>
         </div>
+
         <br>
         <br>
+
         <div class="portfolio-item">
-            <h3>&#127926 Music</h3>
-            <img src="images/music.jpeg" style="width:30rem; height:15rem; object-fit: cover;"  class="zoom">
+            <img src="images/music.jpeg" style="width:100%; max-width:50rem; height:auto; object-fit: cover; border-radius:3px;"  class="smallzoom">
+            <h2>&#127926 Music</h2>
         </div>
+
         <br>
         <br>
+
         <div class="portfolio-item">
-            <img src="images/coding.jpeg" style="width:30rem; height:15rem; object-fit: cover;"  class="zoom">
-            <h3>&#128187 Coding</h3>
+            <img src="images/coding.jpeg" style="width:100%; max-width:50rem; height:auto; object-fit: cover; border-radius:3px;"  class="smallzoom">
+            <h2>&#128187 Coding</h2>
         </div>
     </div>
 </div>
